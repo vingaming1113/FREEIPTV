@@ -1,7 +1,7 @@
 <?php
 $host = 'sql200.hstn.me'; // or your Aeonfree MySQL host
-$dbname = 'FreeIPTV';
-$username = 'mseet_36737212_done';
+$dbname = 'mseet_36737212_done';
+$username = 'mseet_36737212';
 $password = '6dJm52gpdDCWbZ';
 
 try {
