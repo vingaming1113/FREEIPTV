@@ -1,0 +1,11 @@
+{
+  "name": "PHP Development",
+  "image": "mcr.microsoft.com/vscode/devcontainers/php:7.4",
+  "settings": {},
+  "extensions": [
+    "felixfbecker.php-debug",
+    "felixfbecker.php-intellisense"
+  ],
+  "forwardPorts": [8000],
+  "postCreateCommand": "php -S 0.0.0.0:8000"
+}
