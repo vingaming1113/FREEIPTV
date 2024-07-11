@@ -18,7 +18,7 @@ body {
 
 h1, h2 {
     margin-bottom: 20px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #1f7ede, #1f7efe);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -33,7 +33,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #ff7e5f;
+    background-color: #1f7ede;
     color: white;
     border: none;
     border-radius: 5px;
@@ -61,7 +61,7 @@ button i {
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #1f7ede, #1f7efe);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -71,7 +71,7 @@ a.button {
     font-size: 16px;
     text-decoration: none;
     color: white;
-    background-color: #ff7e5f;
+    background-color: #1f7ede;
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
