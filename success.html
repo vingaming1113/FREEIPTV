@@ -20,7 +20,7 @@
             const amount = urlParams.get('amount');
             const time = urlParams.get('time');
             const successMessageElement = document.getElementById('successMessage');
-            if (username && amount && time) {
+            if (username && amount) {
                 successMessageElement.innerHTML = `${username}, you have generated ${parseInt(amount).toLocaleString()} IPTV which you can watch for ${time}!`;
             }
         });
