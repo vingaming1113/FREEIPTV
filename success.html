@@ -18,9 +18,10 @@
             const urlParams = new URLSearchParams(window.location.search);
             const username = urlParams.get('username');
             const amount = urlParams.get('amount');
+            const time = urlParams.get('time');
             const successMessageElement = document.getElementById('successMessage');
-            if (username && amount) {
-                successMessageElement.textContent = `${username}, you have generated ${parseInt(amount).toLocaleString()} IPTV!`;
+            if (username && amount && time) {
+                successMessageElement.textContent = `${username}, you have generated ${parseInt(amount).toLocaleString()} IPTV which you can watch for ${time}!`;
             }
         });
     </script>
