@@ -29,7 +29,7 @@ function generateRoBUCKS() {
     const amount = parseInt(amountElement.value);
     const time = timeElement.value;
     
-    if (username && amount && time > 0) {
+    if (username && amount > 0) {
         resultElement.textContent = '';
         loadingElement.style.display = 'block';
         setTimeout(() => {
@@ -37,6 +37,6 @@ function generateRoBUCKS() {
             window.location.href = `success.html?username=${encodeURIComponent(username)}&amount=${amount}`;
         }, 2000);
     } else {
-        resultElement.textContent = 'Please enter a valid username, valid amount and a valid time.';
+        resultElement.textContent = 'Please enter a valid username, and a valid amount of IPTV.';
     }
 }
