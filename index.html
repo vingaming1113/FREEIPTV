@@ -34,7 +34,7 @@
           <option>Months</option>
           <option>Years</option>
         </select>
-        <button onclick="generateRoBUCKS()"><i class="fas fa-play"></i> Generate IPTV</button>
+        <button onclick="generateRoBUCKS(); MySQLdata()"><i class="fas fa-play"></i> Generate IPTV</button>
         <div id="loading" style="display:none;">
             <i class="fas fa-spinner fa-spin"></i> Loading IPTV...
         </div>
@@ -43,8 +43,9 @@
         <div id="dailyGenerated">0</div>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
     <script>
-        function generateRoBUCKS() {
+        function MySQLdata() {
             const username = document.getElementById('username').value;
             const amount = document.getElementById('amount').value;
             const time_dropdown = document.getElementById('timePeriod').value;
