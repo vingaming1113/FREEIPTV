@@ -27,7 +27,7 @@ select {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.23);
     text-align: center;
 }
 
@@ -36,7 +36,6 @@ h1, h2 {
     background: linear-gradient(to right, #1f7ede, #1f7efe);
     -webkit-background-clip: text;
     color: transparent;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 input {
