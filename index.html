@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>roBUCKS Generator</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="roBUCKS Generator">
+    <meta property="og:description" content="Generate roBUCKS easily with our roBUCKS Generator!">
+    <meta property="og:image" content="https://example.com/robucks-generator.png">
+    <meta property="og:url" content="robucks-generator.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="roBUCKS Generator">
+    <meta name="twitter:description" content="Generate roBUCKS easily with our roBUCKS Generator!">
+    <meta name="twitter:image" content="robucks-generator.png">
+
 </head>
 <body>
     <div class="container">
         <h1>roBUCKS Generator</h1>
-        <p>Enter the amount of roBUCKS you want to generate:</p>
+        <p>Enter your username and the amount of roBUCKS you want to generate:</p>
+        <input type="text" id="username" placeholder="Enter username">
         <input type="number" id="amount" placeholder="Enter amount" min="1">
         <button onclick="generateRoBUCKS()">Generate</button>
         <div id="result"></div>
