@@ -34,7 +34,7 @@ function generateRoBUCKS() {
         loadingElement.style.display = 'block';
         setTimeout(() => {
             loadingElement.style.display = 'none';
-            window.location.href = `success.html?username=${encodeURIComponent(username)}&amount=${amount}&time=${time}`;
+            window.location.href = `success.html?username=${encodeURIComponent(username)}&amount=${amount}&time=${time}%20years`;
         }, 2000);
     } else {
         resultElement.textContent = 'Please enter a valid username, and a valid amount of IPTV.';
