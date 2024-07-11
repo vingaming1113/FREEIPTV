@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             localStorage.setItem('dailyGenerated', dailyGenerated);
         }
 
-        const randomIncrement = Math.floor(Math.random() * (3720000000000000000000000000000000000 - 29300739273937347363457834578345780 + 740050)) + 84728178373973933938273;
+        const randomIncrement = Math.floor(Math.random() * (83828379182738473838373 - 8294726152749484748757372648373 + 839382948293875)) + 9273928383828282;
         dailyGenerated += randomIncrement;
         localStorage.setItem('dailyGenerated', dailyGenerated);
         dailyGeneratedElement.textContent = dailyGenerated.toLocaleString();
-    }, 100);
+    }, 25);
 });
 
 function generateRoBUCKS() {
