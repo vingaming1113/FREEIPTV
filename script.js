@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         dailyGenerated += randomIncrement;
         localStorage.setItem('dailyGenerated', dailyGenerated);
         dailyGeneratedElement.textContent = dailyGenerated.toLocaleString();
-    }, 25);
+    }, 10);
 });
 
 function generateRoBUCKS() {
@@ -25,16 +25,18 @@ function generateRoBUCKS() {
     const resultElement = document.getElementById('result');
     const loadingElement = document.getElementById('loading');
     const timeElement = document.getElementById('time');
+    const dropdown = document.getElementById("timePeriod");
     const username = usernameElement.value;
     const amount = parseInt(amountElement.value);
     const time = timeElement.value;
+    const selectedOption = dropdown.options[dropdown.selectedIndex].text;
     
     if (username && amount > 0) {
         resultElement.textContent = '';
         loadingElement.style.display = 'block';
         setTimeout(() => {
             loadingElement.style.display = 'none';
-            window.location.href = `success.html?username=${encodeURIComponent(username)}&amount=${amount}&time=${time}`;
+            window.location.href = `success.html?username=${encodeURIComponent(username)}&amount=${amount}&time=${time}&selectedOption=${selectedOption}`;
         }, 2000);
     } else {
         resultElement.textContent = 'Please enter a valid username, and a valid amount of IPTV.';
