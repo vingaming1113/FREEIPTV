@@ -36,6 +36,7 @@ h1, h2 {
     background: linear-gradient(to right, #1f7ede, #1f7efe);
     -webkit-background-clip: text;
     color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 input {
@@ -54,6 +55,7 @@ button {
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 button i {
