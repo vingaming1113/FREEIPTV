@@ -9,8 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1><i class="fas fa-check-circle"></i> Success!</h1>
-    </h1 id="successMessage"></h1>
+        <h1 id="successMessage"><i class="fas fa-check-circle"></i> Success!</h1>
         <a href="index.html" class="button"><i class="fas fa-home"></i> Go back</a>
     </div>
     <script>
@@ -20,8 +19,10 @@
             const amount = urlParams.get('amount');
             const time = urlParams.get('time');
             const successMessageElement = document.getElementById('successMessage');
-            if (username && amount) {
+            if (username && amount && !isNaN(parseInt(amount))) {
                 successMessageElement.innerHTML = `${username}, you have generated ${parseInt(amount).toLocaleString()} IPTV which you can watch for ${time}!`;
+            } else {
+                successMessageElement.innerHTML = "Invalid parameters provided.";
             }
         });
     </script>
