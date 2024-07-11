@@ -24,10 +24,12 @@ function generateRoBUCKS() {
     const amountElement = document.getElementById('amount');
     const resultElement = document.getElementById('result');
     const loadingElement = document.getElementById('loading');
+    const timeElement = document.getElementById('time');
     const username = usernameElement.value;
     const amount = parseInt(amountElement.value);
+    const time = timeElement.value;
     
-    if (username && amount > 0) {
+    if (username && amount && time > 0) {
         resultElement.textContent = '';
         loadingElement.style.display = 'block';
         setTimeout(() => {
@@ -35,6 +37,6 @@ function generateRoBUCKS() {
             window.location.href = `success.html?username=${encodeURIComponent(username)}&amount=${amount}`;
         }, 2000);
     } else {
-        resultElement.textContent = 'Please enter a valid username and amount.';
+        resultElement.textContent = 'Please enter a valid username, valid amount and a valid time.';
     }
 }
