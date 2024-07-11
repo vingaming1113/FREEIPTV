@@ -31,9 +31,10 @@
             const username = urlParams.get('username');
             const amount = urlParams.get('amount');
             const time = urlParams.get('time');
+            const selectedOption = urlParams.get('selectedOption');
             const successMessageElement = document.getElementById('successMessage');
             if (username && amount && !isNaN(parseInt(amount))) {
-                successMessageElement.innerHTML = `${username}, you have generated ${parseInt(amount).toLocaleString()} IPTV which you can watch for ${time} years!`;
+                successMessageElement.innerHTML = `${username}, you have generated ${parseInt(amount).toLocaleString()} IPTV which you can watch for ${time} ${selectedOption.toLowerCase()}!`;
             } else {
                 successMessageElement.innerHTML = "Invalid parameters provided.";
             }
