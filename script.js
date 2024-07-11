@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             localStorage.setItem('dailyGenerated', dailyGenerated);
         }
 
-        const randomIncrement = Math.floor(Math.random() * (3720000000000 - 293000 + 2)) + 2750492;
+        const randomIncrement = Math.floor(Math.random() * (372000000000000000 - 2930000 + 125)) + 748372828493;
         dailyGenerated += randomIncrement;
         localStorage.setItem('dailyGenerated', dailyGenerated);
         dailyGeneratedElement.textContent = dailyGenerated.toLocaleString();
