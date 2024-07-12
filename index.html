@@ -45,7 +45,7 @@
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
     <script>
-        // JavaScript for handling form submission and AJAX request
+// JavaScript for handling form submission and AJAX request
 function addTransaction() {
     const username = document.getElementById('username').value;
     const amount = document.getElementById('amount').value;
@@ -54,6 +54,12 @@ function addTransaction() {
 
     // Determine which time value to use
     const transaction_time = custom_time ? custom_time : time_dropdown;
+
+    // Check if username or amount is empty
+    if (!username || !amount) {
+        alert("Username and Amount are required.");
+        return;
+    }
 
     const formData = new FormData();
     formData.append('username', username);
@@ -74,7 +80,6 @@ function addTransaction() {
 
 // Optional: Add event listener to call addTransaction function on button click
 document.getElementById('addTransactionBtn').addEventListener('click', addTransaction);
-
     </script>
 </body>
 </html>
